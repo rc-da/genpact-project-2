@@ -1,0 +1,93 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bgblue.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for the form */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007BFF; /* Blue background for the submit button */
+    color: #fff; /* White text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.success {
+    color: green;
+    border-color: green;
+    background-color: #e6ffee; /* Light green background for success */
+}
+
+.failure {
+    color: red;
+    border-color: red;
+    background-color: #ffe6e6; /* Light red background for failure */
+}
